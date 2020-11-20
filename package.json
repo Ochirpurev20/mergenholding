@@ -1,0 +1,14 @@
+{
+  "name": "mergenholding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "ochiroo",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^8.0.2"
+  }
+}

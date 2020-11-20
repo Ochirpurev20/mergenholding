@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "mergenholding",
+    "stagingMergen": "mergenholding"
+  }
+}
