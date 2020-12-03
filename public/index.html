@@ -5,35 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mergenholding</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/slider.css">
+    <script src="./js/main.js"></script>
   </head>
   <body>
       <a id='top'></a>
       <a href="#top" class="gotop">Go Top</a>
+      <nav class="nav">
+        <a href="#wedo" class="btn">Үйлчилгээ</a>
+        <a href="#wedid" class="btn">Гүйцэтгэл</a>
+        <a href="#contact" class="btn">Холбогдох</a>
+      </nav>
+      <nav class="HamburgerMenu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </nav>
     <section id="showcase">
       <div class="showcase-content">
         <img src="./img/mergen_holding_logo_mn.png" alt="Mergenholding" />
 
-        <h2 class="l-heading">Ур чадвар + ёс зүй.</h2>
-        <a href="#wedo" class="btn">Үйлчилгээ</a>
-        <a href="#wedid" class="btn">Гүйцэтгэл</a>
-        <a href="#contact" class="btn">Холбогдох</a>
+        <h2 class="l-heading">Мэргэжлийн ур чадвар.</h2>
+        <h2 class="l-heading">Өндөр ёс зүй.</h2>
+        
         <div class="description-image">
           <p>backgroud image credit to: DMax Photography</p>
         </div>
       </div>
     </section>
     <section id="wedo">
-        <div class="container">
-
-            <p>Барилгын дотор, гадна засал</p>
+      
+      <div class="container">
+        <h2 class="s-heading">Бидний хийдэг ажил</h2>
+        <div class="aligned-container">
+            <p >Барилгын дотор, гадна засал</p>
             <p>Цахилгаан, холбоо дохиоллын шугам сүлжээ угсралт</p>
-            <p>Халаалт, агаар сэлгэлтийн хоолой угсралт</p>
+            <p >Халаалт, агаар сэлгэлтийн хоолой угсралт</p>
+          </div>  
         </div>
     </section>
     <section id="wedid">
-        <div class="container">
-
-            <p>Бидний хийсэн ажлын зураг</p>
+      <h2 class="s-heading">Бидний хийсэн ажлын зураг</h2>
+        <div class="slideshow">
+          <img id="current-image" src="./img/img2.jpg" alt="">
+          <button class="slide-btn prev" onclick="slide(-1)">&#10094;</button>
+          <button class="slide-btn next" onclick="slide(1)">&#10095;</button>
         </div>
     </section>
     <section id="contact">

@@ -1,0 +1,44 @@
+#wedid {    
+    background: var(--primaryBrown);
+    color: var(--primaryGray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  #wedid h2 {
+    margin: 2rem;
+  }
+.slideshow {
+    position: relative;
+    margin: auto;
+    max-width: 1200px;        
+    background: rgba(0, 0, 0, 0.1);
+}
+.slideshow img {
+    width: 100%;   
+}
+
+.slide-btn {
+    width: 3rem;
+    height: 3rem;
+    background: rgba(88, 131, 38, 0.4);
+    border: none;
+    border-radius: 5px;
+    }
+    .slide-btn:hover {
+        width: 3rem;
+        height: 3rem;
+        background: rgba(88, 131, 38, 0.8);
+        }
+.prev {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+.next {
+    position: absolute;
+    top: 50%;
+    right:5%;
+}
