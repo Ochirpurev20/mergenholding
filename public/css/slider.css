@@ -16,10 +16,40 @@
     max-width: 1200px;        
     background: rgba(0, 0, 0, 0.1);
 }
-.slideshow img {
-    width: 100%;   
+.mySlides {
+    display: none;
 }
-
+.mySlides img {
+    width: 100%;
+}
+.text {
+    color: #fff;
+    padding: 8px 12px;
+    bottom: 10px;
+    position: absolute;
+    text-align: center;
+}
+.numberText {
+    color: #fff;
+    padding: 8px 12px;
+    top: 5px;
+    position: absolute;
+    text-align: center;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -moz-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1;}
+}
+@keyframes fade {
+    from { opacity: .4;}
+    to {opacity: 1;}
+}
 .slide-btn {
     width: 3rem;
     height: 3rem;
@@ -27,7 +57,7 @@
     border: none;
     border-radius: 5px;
     }
-    .slide-btn:hover {
+.slide-btn:hover {
         width: 3rem;
         height: 3rem;
         background: rgba(88, 131, 38, 0.8);
