@@ -32,8 +32,7 @@
 .numberText {
     color: #fff;
     padding: 8px 12px;
-    top: 5px;
-    position: absolute;
+    top: 5px;  
     text-align: center;
 }
 .fade {
@@ -62,13 +61,3 @@
         height: 3rem;
         background: rgba(88, 131, 38, 0.8);
         }
-.prev {
-    position: absolute;
-    top: 50%;
-    left: 5%;
-}
-.next {
-    position: absolute;
-    top: 50%;
-    right:5%;
-}

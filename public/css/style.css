@@ -1,251 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 :root {
-  --primaryGreen: #22422d;
-  --lightGreen: #588326;
-  --primaryGray: #f4f4f4;
-  --primaryYellow: #f1e773;
-  --primaryBrown: #442200;
-}
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5rem;
-  background: var(--primaryGray);
-}
-/* utilities */
-.gotop {
-  position: fixed;
-  right: 5%;
-  bottom: 6%;
-  text-decoration: none;
-  background: var(--lightGreen);
-  padding: 1rem 1rem;
-  border-radius: 5px;
-  color: #fff;
-  font-weight: bold;
-  z-index: 50;
-}
-.gotop:hover{
-  background: var(--primaryGreen);
-}
-.container {
-  max-width: 1100px;
-  margin: auto;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  height: 100%;
-  justify-content: center;
-  
-}
-.nav {
-  display: flex;
-  position: fixed;
-  flex-direction: column;
-  text-align: center;
-  left: 2%;
-  top: 2%;
-  font-size: 1rem;  
-    line-height: 0.5rem;  
-    z-index: 100;
-}
-.nav a {
-  list-style: none;
-  text-decoration: none;
-}
-.HamburgerMenu {
-  display: flex;
-  position: fixed;
-  flex-direction: column;  
-  justify-content: center;
-  left: 2%;
-  top: 2%;  
-  background: rgba(88, 131, 38, 0.8);
-  height: 2.5rem;
-  width: 3rem;
-  border-radius: 3px;
-}
-.HamburgerMenu div {  
-  height: 0.4rem;
-  margin: 0.18rem;
-  background: var(--primaryGreen);
-  border-radius: 3px;
-}
-.container p {
-  font-size: 2.5rem;
-  display: inline-block;
-  margin: 1.5rem;
-  line-height: 1rem;
-  padding: 0.8rem 1rem;
-}
-.aligned-container {
-  text-align: start;
-  
-}
-.s-heading {
-  font-size: 2.5rem;
-  padding-bottom: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-.l-heading {
-  font-size: 4rem;
-  padding-bottom: 0.75rem;  
-  margin-bottom: 3rem;
+
+    --primaryGreen: #22422d;
+    --lightGreen: #588326;
+    --primaryGray: #f4f4f4;
+    --primaryYellow: #f1e773;
+    --primaryBrown: #442200;
 }
 #showcase {
-  background: #333 url("../img/mongol-design1.jpg") no-repeat center
-    center/cover;
-  height: 100vh;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#showcase .showcase-content {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.6);
-}
-.btn {
-  display: inline;
-  color: #fff;
-  padding: 1rem 2rem;
-  margin: 0.4rem;
-  /* background: var(--lightGreen); */
-  background: rgba(88, 131, 38, 0.8);
-  border: none;
-  border-radius: 6px;
-}
-.btn:hover {
-  background: var(--primaryGreen);
-}
-#showcase a {
-  list-style: none;
-  text-decoration: none;
+    background: #333 url("../img/mongol-design1.jpg") no-repeat center
+      center/cover;
+    height: 100vh;
 }
 
-#showcase img {
-  width: 40rem;
-  padding: 2rem;
-  margin: 3rem;
-  border-radius: 10px;
-  animation: logo-clarify 1.3s forwards ease-out;
+.my-bg-prime {
+    background-color:  #588326;;
+}
+.my-bg-light {
+    background-color: var(--primaryGray);
+}
+.my-bg-brown {
+    background-color: var(--primaryBrown);
+}
+.my-color-prime {    
+    color: #588326;
+}
+.my-logo-animation {
+    animation: logo-clarify 1.3s forwards ease-out;
 }
 @keyframes logo-clarify {
-  from {
-    background: rgba(220, 220, 220, 0.1);
-  }
-  to {
-    background: rgba(220, 220, 220, 0.7);
-  }
-}
-#showcase .description-image {
-  position: absolute;
-  bottom: 10%;
-  right: 10%;
-}
-#wedo {
-  height: auto;
-  min-height: 50vh;
-  background: var(--primaryGray);
-  color: var(--primaryBrown);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#contact {
-  height: 50vh;
-  background: var(--primaryGray);
-  color: var(--primaryBrown);
-}
-@media (max-width: 780px) {
-  .l-heading {
-    font-size: 2.8rem;
-    padding: 0.5rem;
-    margin: 0.3rem;
-    margin-bottom: 3rem;
-  }
-  .s-heading {
-    font-size: 1.5rem;
-    margin: 0.3rem;
-    padding-bottom: 0.75rem;
-    margin-bottom: 0.3rem;
-    
-  }
-  #showcase img {
-    width: 29rem;
-    padding: 1rem;
-    margin: 1rem;    
-    border-radius: 10px;
-    animation: logo-clarify 1.3s forwards ease-out;
-  }
-  @keyframes logo-clarify {
     from {
-      background: rgba(220, 220, 220, 0.1);
+        background: rgba(220, 220, 220, 0.1);
     }
     to {
-      background: rgba(220, 220, 220, 0.6);
+        background: rgba(220, 220, 220, 0.7);
     }
-  }
-  .container p {
-    font-size: 1.5rem;
-  }
-  .description-image p {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 400px) {
-  .nav {
-    display: none;
-  }
-  
-  .l-heading {
-    font-size: 2rem;
-    padding: 0.5rem;
-    margin: 0.3rem;
-    margin-bottom: 3rem;
-  }
-  .s-heading {
-    font-size: 1rem;
-    padding-bottom: 0.75rem;
-    margin-bottom: 0.75rem;
-  }
-  #showcase img {
-    width: 20rem;
-    padding: 1rem;
-    margin: 1rem;    
-    border-radius: 10px;
-    animation: logo-clarify 1.3s forwards ease-out;
-  }
-  @keyframes logo-clarify {
-    from {
-      background: rgba(220, 220, 220, 0.1);
-    }
-    to {
-      background: rgba(220, 220, 220, 0.6);
-    }
-  }
-  .container p {
-    font-size: 1rem;
-  }
-  .description-image p {
-    font-size: 0.5rem;
-  }
-}
-
-
-@media (min-width: 400px) {
-  .HamburgerMenu {
-    display: none;
-  }
 }
